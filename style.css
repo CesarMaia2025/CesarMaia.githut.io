@@ -1,89 +1,91 @@
 body {
-    font-family: 'Arial', sans-serif; /* Fonte mais comum */
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #eef2f7; /* Um fundo mais suave */
-    color: #333;
+    background-color: #121212; /* Fundo principal bem escuro */
+    color: #e0e0e0; /* Texto principal claro */
     line-height: 1.6;
 }
 
 .container {
-    max-width: 1000px; /* Largura máxima um pouco maior */
-    margin: 0 auto; /* Centraliza o container */
-    padding: 0 20px; /* Espaçamento interno nas laterais */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 header {
-    background-color: #0a2f5a; /* Cor escura/azul para o cabeçalho */
-    color: #fff;
-    padding: 2rem 0; /* Mais espaço no cabeçalho */
+    background-color: #1f1f1f; /* Um pouco mais claro que o body */
+    color: #ffffff;
+    padding: 2rem 0;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
     margin: 0;
-    font-size: 3rem; /* Título maior */
+    font-size: 3rem;
+    color: #ffffff;
 }
 
 header p {
     margin-top: 5px;
     font-size: 1.4rem;
-    color: #bbb; /* Cor mais clara para o subtítulo */
+    color: #b0b0b0; /* Subtítulo um pouco menos brilhante */
 }
 
 nav {
-    background-color: #1b4f72; /* Cor para a navegação */
+    background-color: #2c2c2c; /* Cor escura para a navegação */
     padding: 0.8rem 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: sticky; /* Fixa a navegação no topo ao rolar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: sticky;
     top: 0;
-    z-index: 1000; /* Garante que fique por cima de outros elementos */
+    z-index: 1000;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Organiza os itens em linha */
-    justify-content: center; /* Centraliza os itens */
-    flex-wrap: wrap; /* Permite quebrar linha em telas pequenas */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav ul li {
-    margin: 0 15px; /* Espaçamento entre os itens do menu */
+    margin: 0 15px;
 }
 
 nav a {
-    color: #fff;
+    color: #e0e0e0; /* Links da navegação claros */
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1rem;
     padding: 5px 0;
-    transition: color 0.3s ease; /* Efeito suave na cor */
+    transition: color 0.3s ease;
 }
 
 nav a:hover,
 nav a:focus {
-    color: #ffc107; /* Cor de destaque ao passar o mouse/focar */
+    color: #f0a500; /* Cor de destaque (ex: âmbar) para hover/focus */
 }
 
 main {
-    padding: 20px 0; /* Espaçamento no topo e base do conteúdo principal */
+    padding: 20px 0;
 }
 
 section {
-    background-color: #fff;
-    padding: 30px; /* Mais padding interno */
-    margin-bottom: 30px; /* Mais margem entre seções */
+    background-color: #1e1e1e; /* Fundo das seções */
+    color: #d4d4d4; /* Texto das seções claro */
+    padding: 30px;
+    margin-bottom: 30px;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 section h2 {
-    color: #0a2f5a; /* Cor do título da seção combinando com o header */
+    color: #f0a500; /* Títulos das seções com cor de destaque */
     margin-top: 0;
-    border-bottom: 2px solid #ffc107; /* Linha colorida sob o título */
+    border-bottom: 2px solid #f0a500;
     padding-bottom: 10px;
     margin-bottom: 20px;
     font-size: 2rem;
@@ -91,40 +93,40 @@ section h2 {
 
 /* Estilos para a Galeria de Imagens */
 .gallery-grid {
-    display: grid; /* Usa Grid para organizar as imagens */
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Colunas responsivas */
-    gap: 15px; /* Espaço entre as imagens */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
 }
 
 .gallery-grid img {
-    display: block; /* Remove espaço extra abaixo da imagem */
-    width: 100%; /* Imagem ocupa toda a largura da coluna */
-    height: auto; /* Mantém a proporção */
+    display: block;
+    width: 100%;
+    height: auto;
     border-radius: 5px;
-    object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease; /* Efeito suave ao passar o mouse */
+    object-fit: cover;
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.1); /* Sombra clara para fundos escuros */
+    transition: transform 0.3s ease;
 }
 
 .gallery-grid img:hover {
-    transform: scale(1.05); /* Aumenta a imagem levemente ao passar o mouse */
+    transform: scale(1.05);
 }
 
 /* Estilos para os Vídeos */
 .video-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colunas para vídeos */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
 .video-container {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; /* Proporção 16:9 (altura/largura) */
+    padding-bottom: 56.25%; /* Proporção 16:9 */
     height: 0;
     border-radius: 8px;
-    overflow: hidden; /* Esconde partes do vídeo que saiam */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Sombra clara */
 }
 
 .video-container iframe {
@@ -133,21 +135,23 @@ section h2 {
     left: 0;
     width: 100%;
     height: 100%;
+    border: none; /* Remove a borda do iframe */
 }
 
 /* Estilos para Depoimentos */
 .testimonials-grid {
-     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Colunas para depoimentos */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
 }
 
 .testimonial-item {
-    background-color: #f8f9fa; /* Fundo claro para o depoimento */
+    background-color: #2a2a2a; /* Fundo do depoimento escuro */
     padding: 20px;
-    border-left: 5px solid #ffc107; /* Borda colorida na lateral */
+    border-left: 5px solid #f0a500; /* Borda com cor de destaque */
     border-radius: 5px;
     font-style: italic;
+    color: #c0c0c0; /* Texto do depoimento claro */
 }
 
 .testimonial-item p:last-child {
@@ -155,30 +159,28 @@ section h2 {
     font-weight: bold;
     text-align: right;
     margin-top: 10px;
-    color: #555;
+    color: #a0a0a0; /* Cor do autor do depoimento */
 }
-
 
 /* Estilo para o rodapé */
 footer {
     text-align: center;
-    padding: 30px 0; /* Mais espaço no rodapé */
+    padding: 30px 0;
     margin-top: 40px;
-    background-color: #0a2f5a;
-    color: #fff;
+    background-color: #1f1f1f; /* Mesma cor do header ou similar */
+    color: #ffffff;
     font-size: 1rem;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Estilo para notas explicativas no HTML */
 .note {
     font-size: 0.9rem;
-    color: #777;
+    color: #888888; /* Cor mais clara para notas em tema escuro */
     text-align: center;
     margin-top: 20px;
     font-style: italic;
 }
-
 
 /* Responsividade básica */
 @media (max-width: 768px) {
@@ -191,30 +193,25 @@ footer {
     }
 
     nav ul {
-        flex-direction: column; /* Empilha os itens do menu em telas pequenas */
-        align-items: center; /* Centraliza os itens empilhados */
+        flex-direction: column;
+        align-items: center;
     }
 
     nav ul li {
-        margin: 5px 0; /* Ajusta a margem para a lista empilhada */
+        margin: 5px 0;
     }
 
     section {
-        padding: 20px; /* Reduz padding em telas pequenas */
+        padding: 20px;
     }
 
     section h2 {
         font-size: 1.7rem;
     }
 
-    /* Ajustes para as grids em telas menores se necessário */
     .gallery-grid,
     .video-grid,
     .testimonials-grid {
         grid-template-columns: 1fr; /* Uma coluna em telas muito pequenas */
     }
-
-     .video-container {
-         /* Pode ajustar o padding-bottom se quiser outra proporção em mobile */
-     }
 }
